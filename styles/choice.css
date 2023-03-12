@@ -1,0 +1,55 @@
+.choice{
+    padding: 180px 0 227px 0;
+}
+.choice .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.choice-content{
+    max-width: 583px;
+}
+.choice-content h1{
+    font-family: "Museo Sans Cyrl Bold",sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 40px;
+}
+.choice-content h1 span{
+    color: #6933DC;
+}
+.choice-description{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 60px;
+}
+.choice-option{
+    position: relative;
+    box-sizing: border-box;
+    width: 583px;
+    background: #FFFFFF;
+    border: 1px solid #C1BBBB;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 26px 70px 26px 40px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.choice-option:hover{
+    border-left: 5px solid #6933DC;
+}
+.choice-option-text{
+    font-family: "Museo Sans Cyrl Bold",sans-serif;
+}
+.choice-option:hover .choice-option-text + .choice-option-arrow{
+    display: flex;
+    color: #6933DC;
+}
+.choice-option-arrow{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: none;
+}

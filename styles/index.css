@@ -1,0 +1,25 @@
+
+.main{
+    padding: 189px 0 231px 0;
+}
+.main .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .main-content{
+    max-width: 588px;
+}
+.main-content h1{
+    font-family: 'Museo Sans Cyrl Bold',sans-serif;
+    font-size: 54px;
+    line-height: 65px;
+    margin-bottom: 40px;
+}
+.main-content h1 span{
+    color: #6933DC;
+}
+.main-description{
+    max-width: 486px;
+    margin-bottom: 60px;
+}

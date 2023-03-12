@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Sans Cyrl", sans-serif;
+    color: #333333;
+}
+a {
+    color: #6933DC;
+}
+
+@font-face {
+    src: url("../fonts/Museo Sans Cyrl 500.ttf");
+    font-family: Museo Sans Cyrl;
+}
+@font-face {
+    src: url("../fonts/Museo Sans Cyrl 700.ttf");
+    font-family: Museo Sans Cyrl Bold;
+}
+
+.header{
+    padding: 40px 0 40px 40px;
+    border-bottom: 1px solid #DCDCF3;
+}
+.header-logo{
+    border-bottom: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+.btn{
+    padding: 14px 35px;
+    background: #6933DC;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover{
+    background: #440ac5;
+}
+.footer{
+    padding: 40px;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #DCDCF3;
+}

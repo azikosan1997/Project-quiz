@@ -1,0 +1,195 @@
+.test {
+    padding: 20px 0 56px 0;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #DCDCF3;
+}
+
+.progress-bar {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.progress-bar-item:not(:first-child) {
+    margin-left: 130px;
+}
+
+.progress-bar-item:not(:last-child)::before {
+    content: " ";
+    z-index: -1;
+    position: absolute;
+    width: 184px;
+    background: #DCDCF3;
+    height: 6px;
+    left: 28px;
+    top: 10px;
+}
+
+.progress-bar-item.complete:not(:last-child)::before {
+    background: #6933DC;
+}
+
+.progress-bar-circle {
+    width: 26px;
+    height: 26px;
+    background: #DCDCF3;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.progress-bar-text {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.progress-bar-item.complete .progress-bar-circle,
+.progress-bar-item.active .progress-bar-circle {
+    background: #6933DC;
+}
+
+.progress-bar-item.active::after {
+    content: " ";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #DCDCF3;
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+}
+
+.test-title {
+    font-family: "Museo Sans Cyrl Bold", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 40px;
+}
+
+.test-title span {
+    color: #6933DC;
+}
+
+.test-option-container {
+    min-height: 356px;
+}
+
+.test-option {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.test-option:hover {
+    cursor: pointer;
+}
+
+.test-option label {
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #6933DC;
+    border-radius: 50%;
+    margin: 0 13px 0 0;
+    transform: translateY(2px);
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: inset 10px 10px #6933DC;
+    transition: .3s ease transform;
+    transform: scale(0);
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+.action-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-transparent{
+    outline: none;
+    background: transparent;
+    padding: 14px 41px;
+    box-sizing: border-box;
+    border: 1px solid #6933DC;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 20px;
+    text-align: center;
+    color: #6933DC;
+    transition: .3s ease all;
+}
+.btn-transparent:hover{
+    background: #6933DC;
+    color: #DCDCF3;
+}
+.test-time{
+    display: flex;
+    align-items: center;
+}
+.test-time-text{
+    margin-right: 15px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #6933DC;
+}
+.test-time-clock{
+    width: 27px;
+    height: 29px;
+    font-size: 10px;
+    line-height: 3;
+    text-align: center;
+    background-image: url("../img/time.png");
+    background-size: cover;
+    background-position: center;
+}
+.skip-question {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.skip-question a{
+    font-size: 17px;
+    text-align: right;
+    color: #6933DC;
+    text-decoration: none;
+}
+.skip-question a:hover{
+    text-decoration: underline;
+}
+.skip-question a img{
+    margin-left: 13px;
+}

@@ -1,0 +1,40 @@
+.result{
+    padding: 140px 0 91px 0;
+}
+.result .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.result-title{
+    max-width: 588px;
+    font-family: "Museo Sans Cyrl Bold",sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 65px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.result-title span{
+    color: #6933DC;
+}
+.result-image{
+    position: absolute;
+    top: 80px;
+    z-index: -1;
+}
+.result-score{
+    width: 480px;
+    height: 388px;
+    font-family: "Museo Sans Cyrl Bold",sans-serif;
+    font-weight: 700;
+    font-size: 158px;
+    line-height: 380px;
+    text-align: center;
+    color: #FFFFFF;
+    background-image: url("../img/circle-image.png");
+    background-size: cover;
+    background-position: center;
+}
