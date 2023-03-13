@@ -52,3 +52,48 @@ a {
     text-align: center;
     color: #DCDCF3;
 }
+
+
+
+.test-option {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.test-option:hover {
+    cursor: pointer;
+}
+
+.test-option label {
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #6933DC;
+    border-radius: 50%;
+    margin: 0 13px 0 0;
+    transform: translateY(2px);
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: inset 10px 10px #6933DC;
+    transition: .3s ease transform;
+    transform: scale(0);
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}

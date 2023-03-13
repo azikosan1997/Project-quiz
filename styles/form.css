@@ -59,7 +59,10 @@
     height: auto;
 }
 
-
+.btn:disabled{
+    background-color: #e2dfe7;
+    cursor: not-allowed;
+}
 
 
 .form-agree{

@@ -37,4 +37,10 @@
     background-image: url("../img/circle-image.png");
     background-size: cover;
     background-position: center;
+    margin-bottom: 80px;
+}
+.see-results{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
