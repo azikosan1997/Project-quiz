@@ -112,6 +112,12 @@ h2 {
     background: #6933DC;
     color: #DCDCF3;
 }
+.btn-transparent:disabled{
+    background: transparent;
+    color: #e2dfe7;
+    border: 1px solid #e2dfe7;
+}
+
 .test-time{
     display: flex;
     align-items: center;

@@ -10,13 +10,13 @@
 
             if (xhr.status === 200 && xhr.responseText) {
                 try {
-                    this.quizzes = JSON.parse(xhr.responseText)
+                    this.quizzes = JSON.parse(xhr.responseText);
                 } catch (e) {
-                    location.href = 'index.html'
+                    location.href = 'index.html';
                 }
                 this.processQuizzes();
             } else {
-                location.href = 'index.html'
+                location.href = 'index.html';
             }
         },
         processQuizzes() {
@@ -27,6 +27,7 @@
                     const choiceOptionElement = document.createElement('div');
                     choiceOptionElement.className = 'choice-option';
                     choiceOptionElement.setAttribute('data-id', quiz.id);
+
                     choiceOptionElement.onclick = function (){
                         that.chooseQuiz(this);
                     };
@@ -55,7 +56,7 @@
         chooseQuiz(element){
             const dataId = element.getAttribute('data-id');
             if (dataId){
-                location.href = 'test.html' + location.search + '&id' + dataId
+                location.href = 'test.html' + location.search + '&id=' + dataId;
             }
         }
     }

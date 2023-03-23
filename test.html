@@ -43,45 +43,26 @@
             </div>
         </div>
         <div class="test-question-container">
-            <div class="test-title">
+            <div class="test-title" id="title">
                <span>Вопрос 2:</span> Тут должен быть текст вопроса?
             </div>
-            <div class="test-option-container">
-                <div class="test-option">
-                    <input type="radio" name="answer" id="answer-one">
-                    <label for="answer-one">Вариант ответа 1</label>
-                </div>
-                <div class="test-option">
-                    <input type="radio" name="answer" id="answer-two">
-                    <label for="answer-two">Вариант ответа 2</label>
-                </div>
-                <div class="test-option">
-                    <input type="radio" name="answer" id="answer-three">
-                    <label for="answer-three">Вариант ответа 3</label>
-                </div>
-                <div class="test-option">
-                    <input type="radio" name="answer" id="answer-four">
-                    <label for="answer-four">Вариант ответа 4</label>
-                </div>
-                <div class="test-option">
-                    <input type="radio" name="answer" id="answer-five">
-                    <label for="answer-five">Вариант ответа 5</label>
-                </div>
+            <div class="test-option-container" id="options">
+
             </div>
             <div class="action-container">
                 <div class="previous-action">
-                    <button class="btn-transparent">Назад</button>
+                    <button class="btn-transparent" id="prev" disabled>Назад</button>
                 </div>
                 <div class="test-time">
                     <div class="test-time-text">Осталось времени:</div>
                     <div class="test-time-clock">49</div>
                 </div>
                 <div class="next-action">
-                    <button class="btn-transparent">Дальше</button>
+                    <button class="btn-transparent" id="next" disabled>Дальше</button>
                 </div>
             </div>
             <div class="skip-question">
-                <a href="#">Пропустить вопрос <img src="img/small-arrow.png" alt="Arrow"></a>
+                <a href="javascript:void(0)" id="pass">Пропустить вопрос <img src="img/small-arrow.png" alt="Arrow"></a>
             </div>
         </div>
     </div>
