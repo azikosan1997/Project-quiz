@@ -19,28 +19,9 @@
 
 <section class="test">
     <div class="container">
-        <h2>Тест №1. “JavaScript: Начальный уровень”</h2>
-        <div class="progress-bar">
-            <div class="progress-bar-item complete">
-                <div class="progress-bar-circle"></div>
-                <div class="progress-bar-text">Вопрос 1</div>
-            </div>
-            <div class="progress-bar-item active">
-                <div class="progress-bar-circle"></div>
-                <div class="progress-bar-text">Вопрос 2</div>
-            </div>
-            <div class="progress-bar-item">
-                <div class="progress-bar-circle"></div>
-                <div class="progress-bar-text">Вопрос 3</div>
-            </div>
-            <div class="progress-bar-item">
-                <div class="progress-bar-circle"></div>
-                <div class="progress-bar-text">Вопрос 4</div>
-            </div>
-            <div class="progress-bar-item">
-                <div class="progress-bar-circle"></div>
-                <div class="progress-bar-text">Вопрос 5</div>
-            </div>
+        <h2 id="pre-title">Тест №1. “JavaScript: Начальный уровень”</h2>
+        <div class="progress-bar" id="progress-bar">
+
         </div>
         <div class="test-question-container">
             <div class="test-title" id="title">
@@ -55,7 +36,7 @@
                 </div>
                 <div class="test-time">
                     <div class="test-time-text">Осталось времени:</div>
-                    <div class="test-time-clock">49</div>
+                    <div class="test-time-clock" id="timer">59</div>
                 </div>
                 <div class="next-action">
                     <button class="btn-transparent" id="next" disabled>Дальше</button>
