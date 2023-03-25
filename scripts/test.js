@@ -20,6 +20,7 @@
                 xhr.send();
                 if (xhr.status === 200 && xhr.responseText) {
                     try {
+                        sessionStorage.setItem('id', testId);
                         this.quiz = JSON.parse(xhr.responseText);
                     } catch (e) {
                         location.href = 'index.html'
@@ -158,11 +159,11 @@
             }
 
             const existingResult = this.userResult.find(item => {
-                return item.questionId === activeQuestion.id
+                return item.questionId === activeQuestion.id;
             });
 
             if (existingResult) {
-                existingResult.chosenAnswerId = chosenAnswerId
+                existingResult.chosenAnswerId = chosenAnswerId;
             } else {
                 this.userResult.push({
                     questionId: activeQuestion.id,
@@ -215,8 +216,8 @@
                 results: this.userResult
             }));
 
-            if (xhr.status === 200 && xhr.responseText) {
 
+            if (xhr.status === 200 && xhr.responseText) {
                 let result = null;
                 try {
                     result = JSON.parse(xhr.responseText);
@@ -224,12 +225,13 @@
                     location.href = 'index.html'
                 }
                 if (result) {
-                    console.log(result);
-                    // location.href = 'result.html' + result.score + '&total=' + result.total;
+                    console.log(result)
+                    location.href = 'result.html?score=' + result.score + '&total=' + result.total;
                 }
             } else {
                 location.href = 'index.html'
             }
+
         }
     }
     Test.init();
